@@ -5,14 +5,14 @@ It solves the following problem in O(n) time and space:
 
 **Problem Statement.** Given a viewpoint `z` inside of a simple polygon `P` with `n` vertices, we want to compute the visibility polygon `VP(P, z)`, which consists of all points in `P` visible from the viewpoint `z`. We say that point `p` is visible from point `q` (and conversely, `q` is visible from `p`) if and only if the line segment `pq` lies completely in `P`.
 
-Remarks:
+### Remarks:
 - I couldn't find any bugs (yet), let me know if you find any.
 - Viewpoints can lie in the polygon's interior, on an edge, or on a vertex.
 - The polygon has to be [simple](https://en.wikipedia.org/wiki/Simple_polygon), the algorithm doesn't work with "obstacles" inside of the polygon.
 - This implementation is for educational purposes only, production level code can be found at [CGAL](https://doc.cgal.org/latest/Visibility_2/classCGAL_1_1Simple__polygon__visibility__2.html)
 - See my [blogpost](https://glavas.github.io/2017/01/01/computing-visibility-polygons/) for more information.
 
-Usage example:
+### Usage example:
 
 ``` java
 // initialize polygon vertices in CCW order
