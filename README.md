@@ -15,21 +15,21 @@ Remarks:
 Usage example:
 
 ``` java
-  // initialize polygon vertices in CCW order
-	List<Point2D> vertices = new ArrayList<>();
-	vertices.add(new Point2D.Double(-2, 2));
-	vertices.add(new Point2D.Double(6, 2));
-	vertices.add(new Point2D.Double(4, 6));
-	vertices.add(new Point2D.Double(1, 4));
-	vertices.add(new Point2D.Double(-1, 6));
-	vertices.add(new Point2D.Double(-2, 4));
-	
-	// initialize polygon
-	CCWPolygon pol = new CCWPolygon(vertices);
-	
-	// initialize viewpoint
-	Point2D z = new Point2D.Double(4, 4);
-	
-	// VP contains the visibility polygon from z in pol in CCW order.
-	CCWPolygon VP = VisibilityPolygon.computeVisPol(pol, z);
+// initialize polygon vertices in CCW order
+List<Point2D> vertices = new ArrayList<>();
+vertices.add(new Point2D.Double(-2, 2));
+vertices.add(new Point2D.Double(6, 2));
+vertices.add(new Point2D.Double(4, 6));
+vertices.add(new Point2D.Double(1, 4));
+vertices.add(new Point2D.Double(-1, 6));
+vertices.add(new Point2D.Double(-2, 4));
+
+// initialize polygon
+CCWPolygon pol = new CCWPolygon(vertices);
+
+// initialize viewpoint
+Point2D z = new Point2D.Double(4, 4);
+
+// VP contains the visibility polygon from z in pol in CCW order.
+CCWPolygon VP = VisibilityPolygon.computeVisPol(pol, z);
 ```
