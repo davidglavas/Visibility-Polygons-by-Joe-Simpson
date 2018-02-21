@@ -1,7 +1,7 @@
 # Joe and Simpson's Visibility Polygon Algorithm
 An implementation of Joe and Simpson's [visibility polygon algorithm](https://cs.uwaterloo.ca/research/tr/1985/CS-85-38.pdf).
 
-It solves the following problem in O(n) time and space which has been shown to be optimal.
+It solves the following problem in O(n) time and space which has been shown to be asymptotically optimal.
 
 **Problem Statement.** Given a viewpoint `z` inside of a simple polygon `P` with `n` vertices, we want to compute the visibility polygon `VP(P, z)`, which consists of all points in `P` visible from the viewpoint `z`. We say that point `p` is visible from point `q` (and conversely, `q` is visible from `p`) if and only if the line segment `pq` lies completely in `P`.
 
