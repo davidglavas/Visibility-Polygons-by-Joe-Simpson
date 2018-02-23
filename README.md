@@ -7,6 +7,7 @@ It solves the following problem in O(n) time and space which has been shown to b
 
 ### Remarks:
 - I couldn't find any bugs (yet), let me know if you find any.
+- General position is not assumed meaning that inputs with three collinear points and/or four cocircular points are handled correctly.
 - Viewpoints can lie in the polygon's interior, on an edge, or on a vertex.
 - The polygon has to be [simple](https://en.wikipedia.org/wiki/Simple_polygon), the algorithm doesn't work with "obstacles" inside of the polygon.
 - This implementation is for educational purposes only, production level code can be found at [CGAL](https://doc.cgal.org/latest/Visibility_2/classCGAL_1_1Simple__polygon__visibility__2.html).
